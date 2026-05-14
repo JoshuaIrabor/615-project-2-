@@ -1,0 +1,17 @@
+[
+  {
+    "id": "e_mp2yllgp_6i684",
+    "type": "club",
+    "name": "Club",
+    "date": "2026-02-12",
+    "time": "19:23",
+    "location": "Boston, Lincolnshire",
+    "coords": {
+      "lat": 52.9776561,
+      "lng": -0.0237985
+    },
+    "max": 4,
+    "desc": "Club",
+    "createdAt": "2026-05-12T18:23:35.401Z"
+  }
+]
