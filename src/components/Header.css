@@ -1,0 +1,53 @@
+/* Header — top navigation bar */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--ink-200);
+}
+.header-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.brand-icon {
+  width: 48px; height: 48px;
+  border-radius: 14px;
+  background: var(--grad-primary);
+  display: grid;
+  place-items: center;
+  color: white;
+  box-shadow: var(--shadow-violet);
+  flex-shrink: 0;
+}
+.brand-text h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.brand-text p {
+  font-size: 13px;
+  color: var(--ink-500);
+  margin-top: 2px;
+}
+
+@media (max-width: 720px) {
+  .header-inner { padding: 14px 18px; }
+  .brand-text p { display: none; }
+  .brand-text h1 { font-size: 18px; }
+}
