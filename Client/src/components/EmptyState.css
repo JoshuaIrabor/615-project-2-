@@ -1,0 +1,46 @@
+/* EmptyState — shown on the events list when there are no events */
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeUp 0.6s ease;
+}
+.empty-icon {
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--violet-100), var(--violet-200));
+  display: grid;
+  place-items: center;
+  margin-bottom: 28px;
+  position: relative;
+  color: var(--violet-600);
+}
+.empty-icon::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 1.5px dashed var(--violet-300);
+  animation: spin 30s linear infinite;
+}
+.empty h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+}
+.empty p {
+  color: var(--ink-500);
+  font-size: 16px;
+  margin-bottom: 32px;
+  max-width: 380px;
+}
+
+@media (max-width: 720px) {
+  .empty h2 { font-size: 26px; }
+}
