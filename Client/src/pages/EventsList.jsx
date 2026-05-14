@@ -50,7 +50,7 @@ export default function EventsList() {
       <div className="error-state">
         <h3>Couldn't load events</h3>
         <p>{error}</p>
-        <p style={{ marginTop: 8, fontSize: 13 }}>Make sure the backend is running on port 3001.</p>
+        <p style={{ marginTop: 8, fontSize: 13 }}>Make sure the backend is running on port 3100.</p>
       </div>
     );
   }

@@ -14,6 +14,14 @@ const DATA_FILE = path.join(__dirname, 'data', 'events.json');
 app.use(cors());
 app.use(express.json());
 
+app.use(cors({
+    origin: "https://615-project-2-production-a58f.up.railway.app", // Allow frontend
+    credentials: true, // Allow cookies and auth headers
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+}));
+
+
 /* ---------- Storage helpers ---------- */
 async function ensureDataFile() {
   const dir = path.dirname(DATA_FILE);
